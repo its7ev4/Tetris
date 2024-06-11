@@ -52,4 +52,4 @@
 *.idb
 *.pdlb
 *.txt
-*.gitattributes
+.gitattributes
