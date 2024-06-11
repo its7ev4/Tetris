@@ -11,7 +11,6 @@ public:
 	void Draw();
 	void Print();
 private:
-	std::vector<Color> GetCellColors();
 	int numRows;
 	int numCols;
 	int cellSize;  // размер в px 1 ячейки
