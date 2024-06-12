@@ -10,6 +10,7 @@ public:
 	int grid[20][10];  // размер сетки
 	void Draw();
 	void Print();
+	bool isCellOutsize(int row, int col);
 private:
 	int numRows;
 	int numCols;

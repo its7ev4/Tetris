@@ -1,6 +1,9 @@
 #include "block.h"
 #include "position.h"
 
+
+//Реализация фигур. Где id означает цвет фигуры, а cells позицию фигуры
+
 class LBlock : public Block{
 public:
 	LBlock() {
@@ -13,6 +16,7 @@ public:
 		, Position(2, 0) };
 		cells[3] = { Position(0, 0), Position(0, 1), Position(2,1)
 		, Position(1, 1) };
+		Move(0, 3);
 	}
 };
 
@@ -28,6 +32,7 @@ public:
 		, Position(2, 2) };
 		cells[3] = { Position(0, 1), Position(1, 1), Position(2,0)
 		, Position(2, 1) };
+		Move(0, 3);
 	}
 };
 
@@ -43,6 +48,7 @@ public:
 		, Position(2, 3) };
 		cells[3] = { Position(0, 1), Position(1, 1), Position(2,1)
 		, Position(3, 1) };
+		Move(-1, 3);
 	}
 };
 
@@ -58,6 +64,7 @@ public:
 		, Position(1, 1) };
 		cells[3] = { Position(0, 0), Position(0, 1), Position(1,0)
 		, Position(1, 1) };
+		Move(0, 4);
 	}
 };
 
@@ -73,6 +80,7 @@ public:
 		, Position(2, 1) };
 		cells[3] = { Position(0, 0), Position(1, 0), Position(1,1)
 		, Position(2, 1) };
+		Move(0, 3);
 	}
 };
 
@@ -88,6 +96,7 @@ public:
 		, Position(2, 1) };
 		cells[3] = { Position(0, 1), Position(1, 0), Position(1,1)
 		, Position(2, 1) };
+		Move(0, 3);
 	}
 };
 
@@ -103,5 +112,6 @@ public:
 		, Position(2, 1) };
 		cells[3] = { Position(0, 1), Position(1, 0), Position(1,1)
 		, Position(2, 0) };
+		Move(0, 3);
 	}
 };

@@ -2,7 +2,6 @@
 #include <iostream>
 #include "colors.h"
 
-
 Grid::Grid() :
 	numRows(20),
 	numCols(10),
@@ -27,6 +26,12 @@ void Grid::Print() {
 		}
 		std::cout << std::endl;
 	}
+}
+
+bool Grid::isCellOutsize(int row, int col)
+{
+	if (row >= 0 && row < numRows && col >= 0 && col < numCols) return false;
+	else return true;
 }
 
 void Grid::Draw() {

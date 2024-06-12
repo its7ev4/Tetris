@@ -1,7 +1,7 @@
 #pragma once
 #include <raylib.h>
 #include <vector>
-
+// для удобства и правилности, будем хранить цвета отдельно
 extern const Color darkGray;
 extern const Color green;
 extern const Color red;
