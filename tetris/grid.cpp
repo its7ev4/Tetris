@@ -30,8 +30,10 @@ void Grid::Print() {
 
 bool Grid::isCellOutsize(int row, int col)
 {
-	if (row >= 0 && row < numRows && col >= 0 && col < numCols) return false;
-	else return true;
+	if (row >= 0 && row < numRows && col >= 0 && col < numCols) {
+		return false;
+	}
+	return true;
 }
 
 bool Grid::IsCellEmpty(int row, int column)
