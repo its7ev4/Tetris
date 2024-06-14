@@ -34,6 +34,14 @@ bool Grid::isCellOutsize(int row, int col)
 	else return true;
 }
 
+bool Grid::IsCellEmpty(int row, int column)
+{
+	if (grid[row][column] == 0) {
+		return true;
+	}
+	return false;
+}
+
 void Grid::Draw() {
 	for (int row = 0; row < numRows; row++) {
 		for (int column = 0; column < numCols; column++) {

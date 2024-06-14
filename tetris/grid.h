@@ -7,10 +7,11 @@ class Grid {
 public:
 	Grid();
 	void Initialize();
-	int grid[20][10];  // размер сетки
 	void Draw();
 	void Print();
 	bool isCellOutsize(int row, int col);
+	bool IsCellEmpty(int row, int column);
+	int grid[20][10];  // размер сетки
 private:
 	int numRows;
 	int numCols;
