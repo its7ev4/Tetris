@@ -11,7 +11,7 @@ public:
 	void Print();
 	bool isCellOutsize(int row, int col);
 	bool IsCellEmpty(int row, int column);
-	int CLearFullRows();
+	int ClearFullRows();
 	int grid[20][10];  // размер сетки
 private:
 	void ClearRow(int row);
