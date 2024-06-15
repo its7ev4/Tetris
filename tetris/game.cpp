@@ -3,13 +3,14 @@
 
 Game::Game() {
 	grid = Grid();
-	blocks = { IBlock(), JBlock(), OBlock(), SBlock(),
-	TBlock(), ZBlock() };
+	blocks = GetAllBlocks();
 	currentBlock = GetRandomBlock();
 	nextBlock = GetRandomBlock();
 	gameOver = false;
+	
 }
 
+	
 Block Game::GetRandomBlock() {
 	if (blocks.empty()) {
 		blocks = GetAllBlocks();
@@ -21,7 +22,7 @@ Block Game::GetRandomBlock() {
 }
 
 std::vector<Block> Game::GetAllBlocks() {
-	return { Block(), JBlock(), OBlock(), SBlock(),
+	return { IBlock(), JBlock(), OBlock(), SBlock(),
 	TBlock(), ZBlock() };
 }
 
